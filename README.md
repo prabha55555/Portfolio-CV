@@ -37,7 +37,7 @@ A modern, sleek portfolio website built with React, TailwindCSS, and various ani
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/prabha55555/CV.git
+git clone https://github.com/prabha55555/Portfolio-CV.git
 cd CV
 ```
 
