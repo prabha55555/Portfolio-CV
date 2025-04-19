@@ -6,7 +6,8 @@
 
 A modern, sleek portfolio website built with React, TailwindCSS, and various animations to showcase professional work, projects, and skills in an interactive manner.
 
-![Portfolio Screenshot](/me.jpg)
+![Portfolio Screenshot](public/image.png)
+
 
 ## ✨ Features
 
