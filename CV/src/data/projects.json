@@ -1,0 +1,61 @@
+[
+    {
+      "id": "1",
+      "Title": "GenImageB10",
+      "Description": "GenImageB10 is a full-stack web application I developed that transforms text prompts into AI-generated images. Users can enter descriptive text, and the application leverages AI to create corresponding visual artwork. The platform also includes a community feature where users can share their creations and browse images created by others.",
+      "Features": ["Image Generation ", "Download Images","Share to Community "],
+      "Github": "https://github.com/prabha55555/Stable-Diffusion-Img-Gen",
+      "Img": "src/assets/genimg.png",
+      "Link": "https://genimageb10.vercel.app/",
+      "TechStack": ["HTML", "CSS", "JavaScript", "ReactJS", "NodeJS", "Express", "MongoDB","HuggingFace API"]
+    },
+    {
+      "id": "2",
+      "Title": "TravelBeam",
+      "Description": "TravelBeam is an intelligent travel planning application that helps users create personalized travel itineraries using AI. The application provides custom travel recommendations based on user preferences, including destination, duration, budget, and group size.",
+      "Features": ["AI-Powered Itinerary Generation", "Google Authentication", " Trip Management","Hotel and Price Recommendations"],
+      "Github": "https://github.com/prabha55555/AI_TRIP_PARTNER",
+      "Img": "src/assets/travelbeam.png",
+      "Link": "https://travelbeam.vercel.app/",
+      "TechStack": ["HTML","Tailwind CSS","shadcn", "JavaScript", "Google Maps API", "Firebase","Gemini API"]
+    },
+    {
+      "id": "3",
+      "Title": "YOLO ChatBot",
+      "Description": "This project is a Flask-based chatbot that integrates BERT for intent classification, GPT-2 for generating responses, and YOLOv5 for object detection in images. The chatbot can handle text inputs and image uploads, providing responses based on the detected objects and user queries.",
+      "Features": ["Responsive chat ", "Image Regonization", "User Experience"],
+      "Github": "https://github.com/prabha55555/Chat-BOT-YOLO",
+      "Img": "src/assets/chatbot.png",
+      "Link": "https://github.com/prabha55555/Chat-BOT-YOLO",
+      "TechStack": ["React", "Python", "MongoDB", "Bertmodel","GPT-2","YOLO-v5"]
+    },
+       {"id": "4",
+      "Title": "HandTracking Car Game",
+      "Description": "The HandTracking Car Game is an innovative project that leverages Python, computer vision, and MediaPipe to create an engaging gaming experience. In this game, the car's position is controlled by the player's hand movements, which are tracked in real-time using machine learning concepts. The objective of the game is to navigate the car without colliding with obstacles.",
+      "Features": ["Real-Time Hand Tracking ", "Gesture-Based Controls", "No Physical Controller Needed","Smooth Control Logic"],
+      "Github": "https://github.com/prabha55555/HandTrackingCarGame",
+      "Img": "src/assets/game.png",
+      "Link": "https://github.com/prabha55555/HandTrackingCarGame",
+      "TechStack": ["Python", "TensorFlow", "OpenCV", "MediaPipe", "NumPy", "Pygame"]
+  }  ,
+  {"id": "5",
+  "Title": "Indian Stock Trend Analysis",
+  "Description": "This project is a web application that allows users to analyze and predict stock prices for Indian stocks listed on the BSE (Bombay Stock Exchange). The application fetches historical stock data, uses TensorFlow.js to create and train a neural network model, and predicts future stock prices based on the historical data.",
+  "Features": ["Real-Time Hand Tracking ", "Gesture-Based Controls", "No Physical Controller Needed","Smooth Control Logic"],
+  "Github": "https://github.com/prabha55555/Stock-Trend-Analytics",
+  "Img": "src/assets/stock.png",
+  "Link": "https://github.com/prabha55555/Stock-Trend-Analytics",
+  "TechStack": ["ReactJS", "TensorFlow.js", "AlphaVantage API", "chart.js"]
+  }  ,
+  {"id": "6",
+  "Title": "Weather Prediction",
+  "Description": "A sleek and modern Weather Dashboard that allows users to check real-time weather conditions and a 5-day forecast for any city. The application features a video background, Lucide icons, and a clean user-friendly UI.",
+  "Features": ["Real-time Weather Data ", "5-Day Forecast", "Responsive Design","Lucide Icons Integration"],
+  "Github": "https://github.com/prabha55555/Weather-Forecast-",
+  "Img": "src/assets/weather.png",
+  "Link": "https://github.com/prabha55555/Weather-Forecast-",
+  "TechStack": ["HTML", "CSS", "JavaScript", "OpenWeather API"]
+  } 
+  
+  ]
+  
