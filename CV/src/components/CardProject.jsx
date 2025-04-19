@@ -1,8 +1,10 @@
 import { ArrowRight, ExternalLink } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
+  const [imageError, setImageError] = useState(false);
+  
   // Handle kasus ketika ProjectLink kosong
   const handleLiveDemo = (e) => {
     if (!ProjectLink) {
@@ -20,14 +22,27 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
     }
   };
   
-  // Function to properly format the image path
-  const formatImagePath = (path) => {
-    // If the path already includes 'src/assets', extract just the filename
-    if (path && path.includes('src/assets/')) {
-      return path.replace('src/assets/', '');
+  // Try different image paths if the main one fails
+  const handleImageError = () => {
+    setImageError(true);
+    console.error(`Failed to load image: ${Img}`);
+  };
+
+  // Get the correct image path
+  const getImagePath = () => {
+    // If there was an error loading the image with the previous path
+    if (imageError) {
+      // Try direct path from public root
+      return Img;
     }
-    // Otherwise return the path as is
-    return path;
+    
+    // First try - if path starts with slash, use directly
+    if (Img && Img.startsWith('/')) {
+      return Img;
+    }
+    
+    // Otherwise assume it's in assets folder
+    return `/assets/${Img}`;
   };
 
 return (
@@ -38,12 +53,12 @@ return (
     
         <div className="relative p-5 z-10">
           {/* Image container without height constraints */}
-          <div className="relative overflow-hidden rounded-lg  shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+          <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
             <img
-              src={`/assets/${formatImagePath(Img)}`}
+              src={getImagePath()}
               alt={Title}
               className="w-full transform group-hover:scale-105 transition-transform duration-500"
-             
+              onError={handleImageError}
             />
           </div>
           

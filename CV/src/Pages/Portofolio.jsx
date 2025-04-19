@@ -15,9 +15,37 @@ import CardProject from "../components/CardProject";
 import Certificate from "../components/Certificate";
 import TechStackIcon from "../components/TechStackIcon";
 
-// Import local JSON data for certificates and projects
-import certificatesData from "../data/certificates.json";
+    // Import local JSON data for projects
 import projectsData from "../data/projects.json";
+
+// Hardcoded certificate data with direct image paths
+const certificatesData = [
+  { Img: "/image1.jpg" },
+  { Img: "/image2.jpg" },
+ 
+  { Img: "/image4.jpg" },
+  { Img: "/image5.jpg" },
+  { Img: "/image18.jpg" },
+  { Img: "/image6.jpg" },
+  { Img: "/image7.jpg" },
+  { Img: "/image8.jpg" },
+  { Img: "/image9.jpg" },
+  { Img: "/image10.jpg" },
+  { Img: "/image11.jpg" },
+  { Img: "/image12.jpg" },
+  { Img: "/image13.jpg" },
+  { Img: "/image14.jpg" },
+  { Img: "/image15.jpg" },
+  { Img: "/image16.jpg" },
+  { Img: "/image17.jpg" },
+ 
+  { Img: "/image19.jpg" },
+  { Img: "/image20.jpg" },
+  { Img: "/image21.jpg" },
+  { Img: "/image22.jpg" },
+  { Img: "/image23.jpg" },
+  { Img: "/image3.jpg" }
+];
 
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }) => (
@@ -141,9 +169,9 @@ export default function FullWidthTabs() {
       once: false, // This will make animations occur only once
     });
 
-    // Set projects and certificates from local JSON data
+    // Set projects and certificates from data
     setProjects(projectsData);
-    setCertificates(certificatesData);
+    setCertificates(certificatesData); // Using hardcoded certificate data
     
     // Store projects in localStorage for other components that might need them
     localStorage.setItem("projects", JSON.stringify(projectsData));
@@ -273,11 +301,6 @@ export default function FullWidthTabs() {
           </Tabs>
         </AppBar>
 
-        {/* <SwipeableViews
-          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-          index={value}
-          onChangeIndex={setValue}
-        > */}
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
@@ -347,7 +370,6 @@ export default function FullWidthTabs() {
               </div>
             </div>
           </TabPanel>
-        {/* </SwipeableViews> */}
       </Box>
     </div>
   );

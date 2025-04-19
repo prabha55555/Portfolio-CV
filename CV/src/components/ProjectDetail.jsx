@@ -98,12 +98,13 @@ const ProjectDetails = () => {
 
   // Function to properly format the image path
   const formatImagePath = (path) => {
-    // If the path already includes 'src/assets', extract just the filename
-    if (path && path.includes('src/assets/')) {
-      return path.replace('src/assets/', '');
+    // If path starts with slash, return as is (it's already a public path)
+    if (path && path.startsWith('/')) {
+      return path;
     }
-    // Otherwise return the path as is
-    return path;
+    
+    // Otherwise return the path with a leading slash to ensure it's from root
+    return path ? `/${path}` : '';
   };
 
   useEffect(() => {
@@ -116,7 +117,7 @@ const ProjectDetails = () => {
         ...selectedProject,
         Features: selectedProject.Features || [],
         TechStack: selectedProject.TechStack || [],
-        Github: selectedProject.Github || 'https://github.com/MathanKumar-1204',
+        Github: selectedProject.Github || 'https://github.com/prabha55555',
       };
       setProject(enhancedProject);
     }
@@ -227,7 +228,7 @@ const ProjectDetails = () => {
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <img
-                  src={`/assets/${formatImagePath(project.Img)}`}
+                  src={formatImagePath(project.Img)}
                   alt={project.Title}
                   className="w-full transform transition-transform duration-700 will-change-transform group-hover:scale-105"
                   style={{ maxHeight: "none" }} /* Remove any max-height limitation */

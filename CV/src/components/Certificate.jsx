@@ -1,10 +1,19 @@
-import React, { useState } from "react"
-import { Modal, IconButton, Box, Fade, Backdrop, Zoom, Typography } from "@mui/material"
 import CloseIcon from "@mui/icons-material/Close"
 import FullscreenIcon from "@mui/icons-material/Fullscreen"
+import { Backdrop, Box, IconButton, Modal, Typography } from "@mui/material"
+import React, { useState } from "react"
 
 const Certificate = ({ ImgSertif }) => {
 	const [open, setOpen] = useState(false)
+
+	// Since files are now in the public folder, we use absolute paths
+	// Public folder files are served at the root path
+	const getImagePath = () => {
+		// Ensure path starts with a slash for files in public folder
+		return ImgSertif.startsWith('/') ? ImgSertif : `/${ImgSertif}`;
+	};
+
+	const imagePath = getImagePath();
 
 	const handleOpen = () => {
 		setOpen(true)
@@ -57,7 +66,7 @@ const Certificate = ({ ImgSertif }) => {
 					}}>
 					<img
 						className="certificate-image"
-						src={ImgSertif}
+						src={imagePath}
 						alt="Certificate"
 						style={{
 							width: "100%",
@@ -178,7 +187,7 @@ const Certificate = ({ ImgSertif }) => {
 
 					{/* Modal Image */}
 					<img
-						src={ImgSertif}
+						src={imagePath}
 						alt="Certificate Full View"
 						style={{
 							display: "block",

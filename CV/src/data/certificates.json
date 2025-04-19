@@ -1,73 +1,74 @@
 [
   {
-    "Img": "src/assets/image1.jpg"
+    "Img": "/image1.jpg"
   },
   {
-    "Img": "src/assets/image2.jpg"
+    "Img": "/image2.jpg"
   },
   
   {
-    "Img": "src/assets/image4.jpg"
+    "Img": "/image4.jpg"
   },
   {
-    "Img": "src/assets/image5.jpg"
+    "Img": "/image18.jpg"
   },
   {
-    "Img": "src/assets/image6.jpg"
+    "Img": "/image5.jpg"
   },
   {
-    "Img": "src/assets/image7.jpg"
+    "Img": "/image6.jpg"
   },
   {
-    "Img": "src/assets/image8.jpg"
+    "Img": "/image7.jpg"
   },
   {
-    "Img": "src/assets/image9.jpg"
+    "Img": "/image8.jpg"
   },
   {
-    "Img": "src/assets/image10.jpg"
+    "Img": "/image9.jpg"
   },
   {
-    "Img": "src/assets/image11.jpg"
+    "Img": "/image10.jpg"
   },
   {
-    "Img": "src/assets/image12.jpg"
+    "Img": "/image11.jpg"
   },
   {
-    "Img": "src/assets/image13.jpg"
+    "Img": "/image12.jpg"
   },
   {
-    "Img": "src/assets/image14.jpg"
+    "Img": "/image13.jpg"
   },
   {
-    "Img": "src/assets/image15.jpg"
+    "Img": "/image14.jpg"
   },
   {
-    "Img": "src/assets/image16.jpg"
+    "Img": "/image15.jpg"
   },
   {
-    "Img": "src/assets/image17.jpg"
+    "Img": "/image16.jpg"
   },
   {
-    "Img": "src/assets/image18.jpg"
+    "Img": "/image17.jpg"
+  },
+  
+  {
+    "Img": "/image19.jpg"
   },
   {
-    "Img": "src/assets/image19.jpg"
+    "Img": "/image20.jpg"
   },
   {
-    "Img": "src/assets/image20.jpg"
+    "Img": "/image21.jpg"
   },
   {
-    "Img": "src/assets/image21.jpg"
+    "Img": "/image22.jpg"
   },
   {
-    "Img": "src/assets/image22.jpg"
+    "Img": "/image23.jpg"
   },
   {
-    "Img": "src/assets/image23.jpg"
-  },
-  {
-    "Img": "src/assets/image3.jpg"
+    "Img": "/image3.jpg"
   }
-  
+   
 ]
